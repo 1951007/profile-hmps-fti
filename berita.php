@@ -3,6 +3,7 @@ require 'functions.php';
 $berita = query("SELECT * FROM berita_fti");
 $visi = query("SELECT * FROM visi");
 $struktur = query("SELECT * FROM struktur_organisasi");
+$foo = "bar";
 ?>
 
 <!DOCTYPE html>
