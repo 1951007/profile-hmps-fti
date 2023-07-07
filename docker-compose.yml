@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  web:
+    container_name: hmpsfti
+    image: hmpsfti:latest
+    restart: always
+    networks:
+      - code-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports: 
+      - '9004:80'
+
+  mysql:
+    container_name: hmpsfti-mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: root-is-not-used
+        MYSQL_DATABASE: hmpsfti_berita
+    image: mysql:8
+    networks:
+        - code-network
+    ports:
+        - 3307:3306
+    volumes:
+        - mysql-data:/var/lib/mysql
+
+volumes:
+    mysql-data:
+
+networks:
+    code-network:
+        driver: bridge

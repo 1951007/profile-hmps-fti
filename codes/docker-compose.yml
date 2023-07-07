@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    container_name: php-docker
+    image: php-docker:latest
+    restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports: 
+      - '9003:80'
