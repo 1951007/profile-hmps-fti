@@ -32,25 +32,20 @@ $struktur = query("SELECT * FROM struktur_organisasi");
       <!-- <img src="img/menu/2.jpg" alt="nav-logo" class="nav-logo" /> -->
       <a href="#" class="navbar-logo">
         <img src="img/header-bg.jpg" alt="logofti">
-        
-       <p> FAKULTAS TEKNIK DAN INFORMATIKA</p> 
-        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2><br>
-     </br>
-    
       </a>
-    
-      
 
+      <div class ="text-logo">
+       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
+        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2>
+      </div>
+    
       <div class="navbar-nav">
         <a href="#hom">Home</a>
         <a href="berita.php">Berita</a>
         <a href="profile.php">Profile</a>
         <a href="struktur.php">Struktur Organisasi</a>
-        
         <a href="visi.php">Visi Dan Misi</a>
-        <a href="kontak.php">Kontak</a>
-        
-        
+        <a href="kontak.php">Kontak</a> 
       </div>
 
       <div class="navbar-extra">

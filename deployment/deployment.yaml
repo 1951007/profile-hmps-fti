@@ -8,17 +8,17 @@ spec:
   selector:
     matchLabels:
       app: hmpsfti-website
-  replicas: 2 
+  replicas: 2
   template:
     metadata:
       labels:
         app: hmpsfti-website
     spec:
       containers:
-      - name: hmpsfti-website
-        image: asia-southeast2-docker.pkg.dev/playground-194610/test-ci-cd/hmpsfti-website:IMAGE_VERSION
-        ports:
-        - containerPort: 80
+        - name: hmpsfti-website
+          image: asia-southeast2-docker.pkg.dev/playground-194610/test-ci-cd/hmpsfti-website:IMAGE_VERSION
+          ports:
+            - containerPort: 80
 ---
 apiVersion: v1
 kind: Service

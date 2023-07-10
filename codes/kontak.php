@@ -31,17 +31,18 @@ $struktur = query("SELECT * FROM struktur_organisasi");
   <nav class="navbar">
       <a href="#" class="navbar-logo">
         <img src="img/header-bg.jpg" alt="logofti">
-        
-       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
-        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2><br>
-     </br>
     
       </a>
+
+      <div class ="text-logo">
+       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
+        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2>
+      </div>
     
       
 
       <div class="navbar-nav">
-        <a href="index2.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="berita.php">Berita</a>
         <a href="profile.php">Profile</a>
         <a href="struktur.php">Struktur Organisasi</a>
@@ -53,8 +54,8 @@ $struktur = query("SELECT * FROM struktur_organisasi");
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="home"><i data-feather="home"></i></a>
+        <!-- <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="home"><i data-feather="home"></i></a> -->
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
     </nav>

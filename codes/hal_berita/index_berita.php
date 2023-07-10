@@ -38,16 +38,18 @@ if (isset($_POST["cari"])  ){
   <nav class="navbar">
       <a href="#" class="navbar-logo">
         <img src="img/header-bg.jpg" alt="logofti">
-        <p>ADMIN</p>
-       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
-        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2><br>
-     </br>
       </a>
+
+
+      <div class ="text-logo">
+       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
+        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2>
+      </div>
     
       
 
       <div class="navbar-extra">
-        <a href="../index2.php">log out</a>
+        <a href="../index.php">log out</a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
     </nav>

@@ -38,9 +38,15 @@ if(isset($_POST['submit'])){
 <html>
     <head>
         <title>halaman berita</title>
+        <link rel="stylesheet" href="style2.css" />
     </head>
+   
 
 <body>
+
+
+
+    
     <div class="input_berita">
         <h1 class="judul"align="center"> MASUKAN BERITA TERBARU </h1>
         

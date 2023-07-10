@@ -31,17 +31,17 @@ $struktur = query("SELECT * FROM struktur_organisasi");
   <nav class="navbar">
       <a href="#" class="navbar-logo">
         <img src="img/header-bg.jpg" alt="logofti">
-        
-       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
-        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2><br>
-     </br>
-    
       </a>
+
+      <div class ="text-logo">
+       <h1> FAKULTAS TEKNIK DAN INFORMATIKA</h1> 
+        <h2><span>UNIVERSITAS PGRI MAHADEWA INDONESIA</span> </h2>
+      </div>
     
       
 
       <div class="navbar-nav">
-        <a href="index2.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="berita.php">Berita</a>
         <a href="profile.php">Profile</a>
         <a href="struktur.php">Struktur Organisasi</a>
@@ -53,8 +53,8 @@ $struktur = query("SELECT * FROM struktur_organisasi");
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="home"><i data-feather="home"></i></a>
+        <!-- <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="home"><i data-feather="home"></i></a> -->
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
@@ -62,7 +62,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
 
   
     <section id="visi" class="visi">
-      <h2>VISI DAN MISI</h2>
+      <h2><span>Visi</span> & Misi</h2>
       <div class="row">
         <div class="visi-img">
           <img src="img/menu/2.jpg" alt="visi" />
@@ -74,11 +74,11 @@ $struktur = query("SELECT * FROM struktur_organisasi");
           
           
       <?php foreach($visi as $row): ?>
-        <h1>VISI</h1>
+        <h1>Visi</h1>
                 <?= $row["visi"]; ?><br>
             <?php endforeach; ?>
 
-            <h1>MISI</h1>
+            <h1>Misi</h1>
             <?php foreach($visi as $row): ?>
             <?= $row["misi"]; ?><br>
         

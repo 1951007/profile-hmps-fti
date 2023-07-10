@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 1.2rem 7%;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid #c2c0c0;
   position: fixed;
@@ -41,6 +41,18 @@ body {
   /* width: 40px;
   height: 40px; */
   border-radius: 50%;
+}
+
+.navbar .text-logo {
+  margin-left: 1px;
+}
+
+.navbar .text-logo h1 {
+  font-size: medium;
+}
+.navbar .text-logo h2 span {
+  color: var(--prymary);
+  font-size: 14px;
 }
 
 .navbar .navbar-logo {
@@ -178,10 +190,14 @@ body {
   position: relative;
 }
 
-.berita h1 {
+/* .berita h2 {
   text-align: center;
-  font-size: xx-large;
-  margin-bottom: 2rem;
+  font-size: medium;
+  margin-bottom: 30px;
+} */
+
+.berita h2 span {
+  color: var(--prymary);
 }
 .berita .row .berita_kanan,
 .berita .row .berita_kiri {
@@ -202,47 +218,58 @@ body {
 
 .berita .row .berita_kanan h2,
 .berita .row .berita_kiri h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1px;
 }
 
+.berita .row .berita_kanan p,
+.berita .row .berita_kiri p {
+  margin-top: 0px;
+}
 .berita .row .berita_kanan,
 .berita .row .berita_kiri {
   text-align: justify;
 }
 .berita .row .berita_kiri img,
 .berita .row .berita_kanan img {
-  width: 80%;
+  display: block;
+  text-align: center;
+  width: 70%;
   flex: 1 1 45rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* abaout section */
 .profile,
-.mis,
+.visi,
 .menu,
 .contact,
 .berita {
-  padding: 8rem 7% 1.4rem;
+  padding: 6rem 7% 1.4rem;
   min-height: 100vh;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .profile h2,
 .menu h2,
-.mis h2,
-.contact h2 {
+.visi h2,
+.contact h2,
+.berita h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
 .profile h2 span,
-.mis h2 span,
+.visi h2 span,
 .menu h2 span,
 .contact h2 span {
   color: var(--prymary);
 }
 
 .profile .row,
-.mis .row,
 .berita .row {
   display: flex;
 }
@@ -256,23 +283,22 @@ body {
 }
 
 .profile .row .content,
-.mis .row .content {
+.menu .row .struktur {
   flex: 1 1 35rem;
   padding: 0 1rem;
 }
 
-.profile .row .content h3,
-.mis .row .content .h3 {
+.profile .row .content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.profile .row .content p,
-.mis .row .content p {
+.profile .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* menu section */
@@ -316,9 +342,6 @@ body {
 }
 
 /* visi section */
-.visi {
-  padding: 8rem 7% 1.4rem;
-}
 
 .visi h2 {
   text-align: center;
@@ -437,6 +460,7 @@ footer .credit a {
   color: var(--bg);
   font-weight: 700;
 }
+
 /* media queries */
 
 /* laptop */
@@ -463,6 +487,9 @@ footer .credit a {
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
+  }
+
+  .navbar .text-logo {
   }
 
   .navbar .navbar-nav.active {

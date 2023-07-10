@@ -2,11 +2,11 @@
 
 // koneksi ke database
 // $conn = mysqli_connect("localhost", "root", "", "db_berita");
-$DB_HOST = 'host.docker.internal';
-$DB_PORT = '3307';
-$DB_NAME = 'hmpsfti_berita';
+$DB_HOST = 'localhost';
+$DB_PORT = 'root';
+$DB_NAME = 'db_berita';
 $DB_USER = 'root';
-$DB_PASS = 'root-is-not-used';
+$DB_PASS = '';
 
 try {
     $dbConn = new PDO("mysql:host=$DB_HOST;port=$DB_PORT;dbname=$DB_NAME", $DB_USER, $DB_PASS);
