@@ -41,7 +41,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
     
       <div class="navbar-nav">
         <a href="#hom">Home</a>
-        <a href="berita.php">Skripsi</a>
+        <a href="berita.php">Berita</a>
         <a href="profile.php">Profile</a>
         <a href="struktur.php">Struktur Organisasi</a>
         <a href="visi.php">Visi Dan Misi</a>
