@@ -123,10 +123,9 @@ function upload(){
 
 
 function hapus($id) {
-    global $conn;
-    mysqli_query($conn, "DELETE FROM berita_fti WHERE id_berita = $id");
-    return mysqli_affected_rows($conn);
-
+    global $dbConn;
+    $result = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
+    return $result->rowCount();
 }
 
 
