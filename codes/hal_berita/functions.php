@@ -114,19 +114,23 @@ function upload(){
 
 
 
-
-
-
-
-
-
-
-
 function hapus($id) {
     global $dbConn;
     $result = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
-    return $result->rowCount();
+    return $result;
 }
+
+
+
+
+
+
+
+// function hapus($id) {
+//     global $dbConn;
+//     $result = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
+//     return $result->rowCount();
+// }
 
 
 
