@@ -46,11 +46,18 @@ function tambah($data) {
     return $rowCount;
 }
 
+
 function hapus($id) {
     global $dbConn;
-    $rowCount = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
-    return $rowCount;
+    $result = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
+    return $result->rowCount();
 }
+
+// function hapus($id) {
+//     global $dbConn;
+//     $rowCount = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
+//     return $rowCount;
+// }
 
 function ubah($data) {
     global $dbConn;
