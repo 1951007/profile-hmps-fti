@@ -57,7 +57,7 @@ if (isset($_POST["cari"])  ){
 
   
   <section id="berita" class="berita">
-    <a href="input_berita.php">Tambah Berita</a>
+    <a href="input_berita.php">Tambah Berita Kampus</a>
 
 
 <form action="" method="post">
