@@ -82,7 +82,7 @@ if (isset($_POST["cari"])  ){
           <td><?= $i; ?></td>
           <td>
 
-            <!-- <a href="ubah.php?id_berita=<?= $row["id_berita"]; ?>" >Ubah</a> | -->
+            <a href="ubah.php?id_berita=<?= $row["id_berita"]; ?>" >Ubah</a> |
             <a href="hapus.php?id_berita=<?= $row["id_berita"]; ?>" onclick="return confirm('Hapus Berita?');"><i data-feather="trash-2"></i></a>
 
           </td>

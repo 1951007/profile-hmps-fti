@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
 
 } else {
     echo " <script>
-    alert ('berita gagal ditambah');
+    alert ('Berita Berhasil ditambah');
     document.locationhref = 'index_berita.php';
     
     </script>";

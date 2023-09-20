@@ -31,7 +31,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
     <nav class="navbar">
       <!-- <img src="img/menu/2.jpg" alt="nav-logo" class="nav-logo" /> -->
       <a href="#" class="navbar-logo">
-        <img src="img/logo-fti2.jpg" alt="logofti">
+        <img src="img/logo-fti2.jpeg" alt="logofti">
       </a>
 
       <div class ="text-logo">
@@ -40,7 +40,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
       </div>
     
       <div class="navbar-nav">
-        <a href="#hom">Skripsi</a>
+        <a href="#hom">Home</a>
         <a href="berita.php">Berita</a>
         <a href="profile.php">Profile</a>
         <a href="struktur.php">Struktur Organisasi</a>
@@ -60,7 +60,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
     <!-- hero section start -->
     <section class="hero" id="hom">
       <main class="content">
-        <h1>profile hmps <span>Fti</span></h1>
+        <h1>profile hmps <span>FTI </span></h1>
         <p>Selamat datang di halaman WEB Profile HMPS FTI.</p>
         <!-- <a href="#" class="cta">beli sekarang</a> -->
       </main>

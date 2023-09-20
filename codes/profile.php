@@ -65,7 +65,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
       <h2><span>Profile </span>HMPS</h2>
       <div class="row">
         <div class="about-img">
-          <img src="img/header2.jpeg" alt="tentang kami" />
+          <img src="img/logo-fti2.jpeg" alt="tentang kami" />
         </div>
         <div class="content">
           <h3>Apa Itu HMPS</h3>

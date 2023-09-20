@@ -1,5 +1,5 @@
 :root {
-  --prymary: #f0a860;
+  --prymary: #a929d8;
   --bg: rgb(255, 255, 255);
 }
 
@@ -126,7 +126,8 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/header2.jpeg");
+  background-color: #eee;
+  /* background-image: url("../img/logo-fti2.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

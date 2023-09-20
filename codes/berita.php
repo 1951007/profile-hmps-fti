@@ -30,7 +30,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
 
   <nav class="navbar">
       <a href="#" class="navbar-logo">
-        <img src="img/header-bg.jpg" alt="logofti">
+        <img src="img/logo-fti2.jpeg" alt="logofti">
       </a>
 
       <div class ="text-logo">

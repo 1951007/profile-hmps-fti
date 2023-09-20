@@ -1,27 +1,27 @@
 <?php 
 
 // koneksi ke database
-// $conn = mysqli_connect("localhost", "root", "", "db_berita");
-$DB_HOST = getenv('DB_HOST');
-$DB_PORT = getenv('DB_PORT');
-$DB_NAME = getenv('DB_NAME');
-$DB_USER = getenv('DB_USER');
-$DB_PASS = getenv('DB_PASSWORD');
+$conn = mysqli_connect("localhost", "root", "", "db_berita");
+// $DB_HOST = getenv('DB_HOST');
+// $DB_PORT = getenv('DB_PORT');
+// $DB_NAME = getenv('DB_NAME');
+// $DB_USER = getenv('DB_USER');
+// $DB_PASS = getenv('DB_PASSWORD');
 
-try {
-    $dbConn = new PDO("mysql:host=$DB_HOST;port=$DB_PORT;dbname=$DB_NAME", $DB_USER, $DB_PASS);
-    $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    $fileName = basename($e->getFile(), ".php");
-    $lineNumber = $e->getLine();
-    die("[$fileName][$lineNumber] Database error: " . $e->getMessage() . '<br />');
-}
+// try {
+//     $dbConn = new PDO("mysql:host=$DB_HOST;port=$DB_PORT;dbname=$DB_NAME", $DB_USER, $DB_PASS);
+//     $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// } catch (PDOException $e) {
+//     $fileName = basename($e->getFile(), ".php");
+//     $lineNumber = $e->getLine();
+//     die("[$fileName][$lineNumber] Database error: " . $e->getMessage() . '<br />');
+// }
 
 function query($query) {
 
-    global $dbConn;
+    global $conn;
 
-    $result = $dbConn->query($query);
+    $result = $conn->query($query);
     return $result;
 }
 
@@ -29,7 +29,7 @@ function query($query) {
 // ambil data dari tiap elem form
 function tambah($data) {
 
-    global $dbConn;
+    global $conn;
 
     $judul = htmlspecialchars($data["judul_berita"]);
     $isi = htmlspecialchars( $data["isi_berita"]);
@@ -46,7 +46,7 @@ function tambah($data) {
     $sql = "INSERT INTO berita_fti (judul_berita, isi_berita, tgl_berita, gambar_berita, id_kategori)
             VALUES ('$judul', '$isi', '$tgl', '$gambar','$kategori')
             ";
-    $result = $dbConn->exec($sql);
+    $result = $conn->exec($sql);
     return $result->rowCount();
 }
 
@@ -115,9 +115,12 @@ function upload(){
 
 
 function hapus($id) {
-    global $dbConn;
-    $result = $dbConn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
-    return $result;
+    global $conn;
+    // $result = $conn->exec("DELETE FROM berita_fti WHERE id_berita = $id");
+    // return $result;
+
+    mysqli_query($conn, "DELETE * FROM berita_fti WHERE id = $id");
+    return mysqli_affected_rows($conn);
 }
 
 
