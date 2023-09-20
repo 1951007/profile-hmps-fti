@@ -60,7 +60,7 @@ $struktur = query("SELECT * FROM struktur_organisasi");
     <!-- hero section start -->
     <section class="hero" id="hom">
       <main class="content">
-        <h1>profile hmps <span>FTI </span></h1>
+        <h1>profile hmps <span>FTI 123 </span></h1>
         <p>Selamat datang di halaman WEB Profile HMPS FTI.</p>
         <!-- <a href="#" class="cta">beli sekarang</a> -->
       </main>
